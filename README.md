@@ -6,11 +6,15 @@ Installer Debian/Ubuntu untuk memasang Docker 9router + Hermes Agent, menambahka
 
 ## Satu perintah
 
+Repo ini dibuat **private**. Untuk menjalankannya di VPS baru, clone lewat GitHub CLI yang sudah terautentikasi (atau SSH deploy key), lalu jalankan installer:
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/OWNER/hermes-gemini-9router/main/install.sh -o install.sh && sudo bash install.sh
+gh repo clone judasyali-cmyk/hermes-gemini-9router
+cd hermes-gemini-9router
+sudo bash install.sh
 ```
 
-Ganti `OWNER` dengan pemilik repo. Repo public diperlukan agar raw installer bisa diunduh tanpa autentikasi.
+Kalau mau satu perintah `curl | bash` dari VPS tanpa GitHub auth, repo atau mirror installer harus public. Jangan jadikan public sebelum memutuskan itu memang yang lu mau.
 
 ## Yang dilakukan
 
